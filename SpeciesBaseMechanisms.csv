@@ -1,0 +1,132 @@
+Label,EC,Type,StartingConc,Conc,Mechanisms,Parameters,Species,Relative
+2-oxoglutarate dehydrogenase subunit E1,1.2.4.2,Endogenous Enzyme,0.028673653,,,,Escherichia coli,rel0
+ATP-dependent 6-phosphofructokinase,2.7.1.11,Endogenous Enzyme,0.001095808,,,,Escherichia coli,rel0
+Beta-hydroxydecanoyl_-ACP dehydratase,4.2.1.59,Endogenous Enzyme,0.003287425,,,,Escherichia coli,rel0
+Beta-ketoacyl-[acyl-carrier-protein] synthase II,2.3.1.41,Endogenous Enzyme,0.006757485,,,,Escherichia coli,rel0
+Enolase,4.2.1.11,Endogenous Enzyme,0.013697605,,,,Escherichia coli,rel0
+Enoyl_-[acyl-carrier-protein] reductase ,1.3.1.9,Endogenous Enzyme,0.009862275,,,,Escherichia coli,rel0
+Fatty acid oxidation complex subunit alpha ,1.1.1.35,Endogenous Enzyme,0.000547904,,,,Escherichia coli,rel0
+Fatty acid oxidation complex subunit alpha ,4.2.1.17,Endogenous Enzyme,0.000547904,,,,Escherichia coli,rel0
+Fatty acid oxidation complex subunit alpha ,4.2.1.17,Endogenous Enzyme,0.000547904,,,,Escherichia coli,rel0
+"Fructose_1,6-bisphosphatase",3.1.3.11,Endogenous Enzyme,0.002374251,,,,Escherichia coli,rel0
+3-oxoacyl-ACP reductase,1.1.1.100,Endogenous Enzyme,0.001826347,,,,Escherichia coli,rel0
+Fructose-bisphosphatase aldolase,4.1.2.13,Endogenous Enzyme,0.007305389,,,,Escherichia coli,rel0
+Fumarate hydratase class I,4.2.1.2,Endogenous Enzyme,0.009314371,,,,Escherichia coli,rel0
+Glucose-6-phosphate dehydrogenase,1.1.1.49,Endogenous Enzyme,0.004565868,,,,Escherichia coli,rel0
+Glucose-6-phosphate isomerase,5.3.1.9,Endogenous Enzyme,0.000913174,,,,Escherichia coli,rel0
+Glyceraldehyde-3-phosphate dehydrogenase,1.2.1.12,Endogenous Enzyme,0.019724551,,,,Escherichia coli,rel0
+Glycogen phosphorylase,2.4.1.1,Endogenous Enzyme,0.001826347,,,,Escherichia coli,rel0
+Long-chain-fatty-acid--CoA ligase,6.2.1.3,Endogenous Enzyme,0.001095808,,,,Escherichia coli,rel0
+Malate dehydrogenase,1.1.1.37,Endogenous Enzyme,0.012601796,,,,Escherichia coli,rel0
+Malonyl CoA-ACP transacylase,2.3.1.39,Endogenous Enzyme,0.002374251,,,,Escherichia coli,rel0
+NADP-dependent isocitrate dehydrogenase,1.1.1.42,Endogenous Enzyme,0.01698503,,,,Escherichia coli,rel0
+3-oxoacyl-ACP synthase I ,2.3.1.41,Endogenous Enzyme,0.005661677,,,,Escherichia coli,rel0
+NADP-dependent isocitrate dehydrogenase,1.1.1.42,Endogenous Enzyme,0.01698503,,,,Escherichia coli,rel0
+Nucleoside-diphosphate kinase,2.7.4.6,Endogenous Enzyme,0.003652695,,,,Escherichia coli,rel0
+Phosphoenolpyruvate carboxykinase (ATP),4.1.1.49,Endogenous Enzyme,0.007427146,,,,Escherichia coli,rel0
+Phosphoenolpyruvate carboxylase,4.1.1.31,Endogenous Enzyme,0.005357285,,,,Escherichia coli,rel0
+Phosphoenolpyruvate synthase,2.7.9.2,Endogenous Enzyme,0.010958084,,,,Escherichia coli,rel0
+Phosphoglucomutase,5.4.2.2,Endogenous Enzyme,0.003652695,,,,Escherichia coli,rel0
+Phosphoglycerate kinase,2.7.2.3,Endogenous Enzyme,0.01661976,,,,Escherichia coli,rel0
+Phosphoglycerate mutase,5.4.2.11,Endogenous Enzyme,0.000365269,,,,Escherichia coli,rel0
+Pyruvate dehydrogenase E1 component,1.2.4.1,Endogenous Enzyme,0.018628742,,,,Escherichia coli,rel0
+3-oxoacyl-ACP synthase III ,2.3.1.180,Endogenous Enzyme,0.00347006,,,,Escherichia coli,rel0
+Pyruvate kinase I,2.7.1.40,Endogenous Enzyme,0.00657485,,,,Escherichia coli,rel0
+Pyruvate kinase II,2.7.1.40,Endogenous Enzyme,0.00694012,,,,Escherichia coli,rel0
+Ribose-5-phosphate isomerase,5.3.1.6,Endogenous Enzyme,0.002008982,,,,Escherichia coli,rel0
+Ribulose-phosphate 3-epimerase,5.1.3.1,Endogenous Enzyme,0.000913174,,,,Escherichia coli,rel0
+Succinate dehydrogenase,1.3.5.1,Endogenous Enzyme,0.007305389,,,,Escherichia coli,rel0
+Succinyl-CoA ligase,6.2.1.5,Endogenous Enzyme,0.018263473,,,,Escherichia coli,rel0
+Transaldolase,2.2.1.2,Endogenous Enzyme,0.011871257,,,,Escherichia coli,rel0
+Transketolase,2.2.1.1,Endogenous Enzyme,0.014976048,,,,Escherichia coli,rel0
+Triose-phosphate isomerase,5.3.1.1,Endogenous Enzyme,0.002922156,,,,Escherichia coli,rel0
+Acetyl-CoA C-acyltransferase,2.3.1.9,Endogenous Enzyme,0.000182635,,,,Escherichia coli,rel0
+Type II citrate synthase,2.3.3.1,Endogenous Enzyme,0.010775449,,,,Escherichia coli,rel0
+Isocitrate lyase,4.1.3.1,Endogenous Enzyme,0.0014002,,,,Escherichia coli,rel0
+Acetyl-CoA synthetase,6.2.1.1,Endogenous Enzyme,0.002496008,,,,Escherichia coli,rel0
+Serine hydroxymethyltransferase,2.1.2.1,Endogenous Enzyme,0.00694012,,,,Escherichia coli,rel0
+Acetate kinase,2.7.2.1,Endogenous Enzyme,0.002922156,,,,Escherichia coli,rel0
+Carbonic anhydrase,4.2.1.1,Endogenous Enzyme,0.002861277,,,,Escherichia coli,rel0
+L-serine ammonia-lyase,4.3.1.17,Endogenous Enzyme,0.0014002,,,,Escherichia coli,rel0
+Lactate dehydrogenase,1.1.1.27,Endogenous Enzyme,0.000365269,,,,Escherichia coli,rel0
+Acetyl-CoA carboxytransferase,6.4.1.2,Endogenous Enzyme,0.006026946,,,,Escherichia coli,rel0
+Aconitate hydratase A,4.2.1.3,Endogenous Enzyme,0.000547904,,,,Escherichia coli,rel0
+Aconitate hydratase B,4.2.1.3,Endogenous Enzyme,0.032508982,,,,Escherichia coli,rel0
+Adenylate kinase,2.7.4.3,Endogenous Enzyme,0.00694012,,,,Escherichia coli,rel0
+Pyruvate carboxylase,6.4.1.1,Heterologous Enzyme,0.01,,,,Rhizobium etli,rel0
+Formate dehydrogenase,1.17.1.9,Heterologous Enzyme,0.01,,,,Starkeya novella,rel0
+L-serine ammonia-lyase,4.3.1.17,Heterologous Enzyme,0.01,,,,Dictyostelium discoideum,rel0
+_3E_3_Enoyl__CoA,,Metabolite,0.001,,,,,v1
+_3R_3_Hydroxyacyl_acyl_carrier_protein,,Metabolite,0.001,,,,,v2
+_3S_3_Hydroxyacyl_CoA,,Metabolite,0.001,,,,,v3
+ADP,,Metabolite,0.1,,,,,v4
+AMP,,Metabolite,10,,,,,v5
+ATP,,Metabolite,1.5,,,,,v6
+Acetate,,Metabolite,69.3,,,,,v7
+Acetoacetyl_CoA,,Metabolite,0.022,,,,,v8
+Acetoacetyl_acp,,Metabolite,0.001,,,,,v9
+AcetylCoA,,Metabolite,0.61,,,,,v10
+Acetyl_phosphate,,Metabolite,1.1,,,,,v11
+Acyl_acyl_carrier_protein,,Metabolite,0.001,,,,,v12
+Acyl_carrier_protein,,Metabolite,0.001,,,,,v13
+Ammonia,,Metabolite,15,,,,,v14
+CO2,,Metabolite,0.0184,,,,,v15
+Citrate,,Metabolite,2,,,,,v16
+CoA,,Metabolite,4.4,,,,,v17
+D_Erythrose_4_phosphate,,Metabolite,0.001,,,,,v18
+D_Fructose_1_6_bisphosphate,,Metabolite,15,,,,,v19
+D_Fructose_6_phosphate,,Metabolite,3.8,,,,,v20
+D_Glucono_1_5_lactone_6_phosphate,,Metabolite,0.001,,,,,v21
+D_Glucose_1_phosphate,,Metabolite,0.001,,,,,v22
+DGlucose6phosphate,,Metabolite,5,,,,,v23
+D_Glyceraldehyde_3_phosphate,,Metabolite,0.001,,,,,v24
+D_ribose_5_phosphate,,Metabolite,0.001,,,,,v25
+D_Ribulose_5_phosphate,,Metabolite,0.5,,,,,v26
+D_Xylulose_5_phosphate,,Metabolite,0.5,,,,,v27
+Diphosphate,,Metabolite,1,,,,,v28
+Fumarate,,Metabolite,0.12,,,,,v29
+Glycerone_phosphate,,Metabolite,0.001,,,,,v30
+Glycine,,Metabolite,0.001,,,,,v31
+Glyoxylate,,Metabolite,0.001,,,,,v32
+H,,Metabolite,0.0001,,,,,v33
+H2O,,Metabolite,55000,,,,,v34
+HCO3,,Metabolite,0.015,,,,,v35
+Hydroquinone,,Metabolite,1,,,,,v36
+Isocitrate,,Metabolite,0.001,,,,,v37
+L_Serine,,Metabolite,0.001,,,,,v38
+LongchainacylCoA,,Metabolite,0.001,,,,,v39
+Long_chain_fatty_acid,,Metabolite,0.001,,,,,v40
+Malonyl_CoA,,Metabolite,0.001,,,,,v41
+Malonyl_acyl_carrier_protein,,Metabolite,0.001,,,,,v42
+NAD,,Metabolite,5.6,,,,,v43
+NADH,,Metabolite,0.083,,,,,v44
+NADP,,Metabolite,0.0021,,,,,v45
+NADPH,,Metabolite,0.12,,,,,v46
+NDP,,Metabolite,1,,,,,v47
+NTP,,Metabolite,1.5,,,,,v48
+Orthophosphate,,Metabolite,0.001,,,,,v49
+Oxaloacetate,,Metabolite,0.001,,,,,v50
+Oxalosuccinate,,Metabolite,0.001,,,,,v51
+Phosphoenolpyruvate,,Metabolite,0.18,,,,,v52
+Pyruvate,,Metabolite,0.001,,,,,v53
+Quinone,,Metabolite,1,,,,,v54
+S_Lactate,,Metabolite,3.25,,,,,v55
+SMalate,,Metabolite,1.7,,,,,v56
+Sedoheptulose_7_phosphate,,Metabolite,0.001,,,,,v57
+Starch,,Metabolite,0.001,,,,,v58
+Succinate,,Metabolite,7.1692,,,,,v59
+SuccinylCoA,,Metabolite,0.23,,,,,v60
+Tetrahydrofolate,,Metabolite,0.001,,,,,v61
+_1_4_alpha_D_Glucan,,Metabolite,0.001,,,,,v62
+n2Oxoglutarate,,Metabolite,0.44,,,,,v63
+_2_Phospho_D_glycerate,,Metabolite,1.5,,,,,v64
+_3_Oxoacyl_CoA,,Metabolite,0.001,,,,,v65
+_3_Oxoacyl_acyl_carrier_protein,,Metabolite,0.001,,,,,v66
+_3_Phospho_D_glycerate,,Metabolite,30,,,,,v67
+_3_Phospho_D_glyceroyl_ phosphate,,Metabolite,0.001,,,,,v68
+_5_10_Methylenetetrahydrofolate,,Metabolite,0.001,,,,,v69
+cis_Aconitate,,Metabolite,0.001,,,,,v70
+trans_2_3_Dehydroacyl_CoA,,Metabolite,0.001,,,,,v71
+trans_2_3_Dehydroacyl_acyl_carrier_protein,,Metabolite,0.001,,,,,v72
+Hydroxycitrate,,Metabolite,0,,,,,v73
+Formate,,Metabolite,0.001,,,,,v74
