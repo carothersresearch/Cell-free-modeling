@@ -1,0 +1,123 @@
+Label,EC,Type,StartingConc,Conc,Mechanisms,Parameters,Species
+Formate-tetrahydrofolate ligase,6.3.4.3,Enzyme,0.05,,,,Escherichia coli
+Methylenetetrahydrofolate dehydrogenase (nadp+),1.5.1.5,Enzyme,0.05,,,,Escherichia coli
+Formate c-acetyltransferase,2.3.1.54,Enzyme,0.05,,,,Escherichia coli
+Formate dehydrogenase,1.17.1.9,Enzyme,0.05,,,,Escherichia coli
+Alanine dehydrogenase,1.4.1.1,Enzyme,0.05,,,,Escherichia coli
+Acetoacetyl-coa reductase,1.1.1.36,Enzyme,0.05,,,,Escherichia coli
+Beta-lysine n6-acetyltransferase,2.3.1.264,Enzyme,0.05,,,,Cupriavidus necator
+Acetate coa-transferase,2.8.3.8,Enzyme,0.05,,,,Escherichia coli
+Acetoacetate decarboxylase,4.1.1.4,Enzyme,0.05,,,,Escherichia coli
+Alcohol dehydrogenase,1.1.1.1,Enzyme,0.05,,,,Escherichia coli
+Acetaldehyde dehydrogenase (acetylating),1.2.1.10,Enzyme,0.05,,,,Escherichia coli
+Aldehyde dehydrogenase (nad+),1.2.1.3,Enzyme,0.05,,,,Escherichia coli
+Acetolactate synthase,2.2.1.6,Enzyme,0.05,,,,Escherichia coli
+Acetolactate decarboxylase,4.1.1.5,Enzyme,0.05,,,,Escherichia coli
+"(r,r)-butanediol dehydrogenase",1.1.1.4,Enzyme,0.05,,,,Escherichia coli
+Ketol-acid reductoisomerase (nadp+),1.1.1.86,Enzyme,0.05,,,,Escherichia coli
+Dihydroxy-acid dehydratase,4.2.1.9,Enzyme,0.05,,,,Escherichia coli
+Branched-chain-2-oxoacid decarboxylase,4.1.1.72,Enzyme,0.05,,,,Lactococcus lactis
+Pyruvate carboxylase,6.4.1.1,Enzyme,0.05,,,,Escherichia coli
+Malonyl-coa reductase (malonate semialdehyde-forming),1.2.1.75,Enzyme,0.05,,,,Chloroflexus aurantiacus
+3-hydroxypropionate dehydrogenase (nadp+),1.1.1.298,Enzyme,0.05,,,,Chloroflexus aurantiacus
+Phosphoenolpyruvate carboxylase,4.1.1.31,Enzyme,0.05,,,,Escherichia coli
+Aspartate dehydrogenase,1.4.1.21,Enzyme,0.05,,,,Escherichia coli
+Propionate coa-transferase,2.8.3.1,Enzyme,0.05,,,,Escherichia coli
+Lactoyl-coa dehydratase,4.2.1.54,Enzyme,0.05,,,,Clostridium propionicum
+Acyl-coa hydrolase,3.1.2.20,Enzyme,0.05,,,,Escherichia coli
+Glycerol kinase,2.7.1.30,Enzyme,0.05,,,,Escherichia coli
+Glycerol-3-phosphate dehydrogenase (nad+),1.1.1.8,Enzyme,0.05,,,,Saccharomyces cerevisiae
+Methylglyoxal synthase,4.2.3.3,Enzyme,0.05,,,,Escherichia coli
+Lactaldehyde reductase,1.1.1.77,Enzyme,0.05,,,,Escherichia coli
+D-xylose reductase [nad(p)h],1.1.1.307,Enzyme,0.05,,,,Escherichia coli
+D-xylose 1-dehydrogenase,1.1.1.175,Enzyme,0.05,,,,Escherichia coli
+Xylose isomerase,5.3.1.5,Enzyme,0.05,,,,Escherichia coli
+Xylulokinase,2.7.1.17,Enzyme,0.05,,,,Escherichia coli
+Methanol dehydrogenase,1.1.1.244,Enzyme,0.05,,,,Bacillus methanolicus
+3-hexulose-6-phosphate synthase,4.1.2.43,Enzyme,0.05,,,,Bacillus subtilis
+6-phospho-3-hexuloisomerase,5.3.1.27,Enzyme,0.05,,,,Bacillus subtilis
+Hexokinase,2.7.1.1,Enzyme,0.05,,,,Escherichia coli
+Mannitol 2-dehydrogenase,1.1.1.67,Enzyme,0.05,,,,Escherichia coli
+Glucose 1-dehydrogenase [nad(p)+],1.1.1.47,Enzyme,0.05,,,,Escherichia coli
+Glycerol dehydrogenase,1.1.1.6,Enzyme,0.05,,,,Escherichia coli
+C03044,,Metabolite,0.001,,,,
+C00163,,Metabolite,0.001,,,,
+C00085,,Metabolite,0.001,,,,
+C00010,,Metabolite,1.4,,,,
+C00049,,Metabolite,0.001,,,,
+C10955,,Metabolite,0.001,,,,
+C00040,,Metabolite,0.001,,,,
+C00222,,Metabolite,0.001,,,,
+C00424,,Metabolite,0.001,,,,
+C00033,,Metabolite,0.001,,,,
+C01086,,Metabolite,0.001,,,,
+C00011,,Metabolite,0.001,,,,
+C00900,,Metabolite,0.001,,,,
+C00261,,Metabolite,0.001,,,,
+C00988,,Metabolite,0.001,,,,
+C00164,,Metabolite,0.001,,,,
+C00100,,Metabolite,0.001,,,,
+C02403,,Metabolite,0.0184,,,,
+C00379,,Metabolite,0.001,,,,
+C00022,,Metabolite,0.0,,,,
+C04272,,Metabolite,0.001,,,,
+C00827,,Metabolite,0.001,,,,
+C06019,,Metabolite,0.001,,,,
+C00069,,Metabolite,0.001,,,,
+C00084,,Metabolite,0.0,,,,
+C00143,,Metabolite,0.001,,,,
+C00101,,Metabolite,0.001,,,,
+C00004,,Metabolite,0.083,,,,
+C00546,,Metabolite,0.001,,,,
+C02965,,Metabolite,0.001,,,,
+C00005,,Metabolite,0.12,,,,
+C00002,,Metabolite,0.001,,,,
+C00894,,Metabolite,0.001,,,,
+C00058,,Metabolite,0.0,,,,
+C00234,,Metabolite,0.001,,,,
+C00264,,Metabolite,0.001,,,,
+C00392,,Metabolite,0.001,,,,
+C00003,,Metabolite,0.001,,,,
+C00008,,Metabolite,0.001,,,,
+C00221,,Metabolite,0.001,,,,
+C00310,,Metabolite,0.001,,,,
+C00001,,Metabolite,0.001,,,,
+C00810,,Metabolite,0.001,,,,
+C00288,,Metabolite,0.001,,,,
+C00036,,Metabolite,0.0,,,,
+C00445,,Metabolite,0.001,,,,
+C00044,,Metabolite,0.001,,,,
+C00083,,Metabolite,0.001,,,,
+C00111,,Metabolite,0.37,,,,
+C02223,,Metabolite,0.001,,,,
+C00060,,Metabolite,0.001,,,,
+C00006,,Metabolite,0.0021,,,,
+C02266,,Metabolite,0.001,,,,
+C00199,,Metabolite,0.5,,,,
+C00014,,Metabolite,0.001,,,,
+C00095,,Metabolite,0.001,,,,
+C00184,,Metabolite,0.001,,,,
+C04039,,Metabolite,0.001,,,,
+C06010,,Metabolite,0.001,,,,
+C00198,,Metabolite,0.001,,,,
+C00231,,Metabolite,0.5,,,,
+C00071,,Metabolite,0.001,,,,
+C00035,,Metabolite,0.001,,,,
+C00009,,Metabolite,0.001,,,,
+C00116,,Metabolite,0.001,,,,
+C00024,,Metabolite,0.0,,,,
+C00067,,Metabolite,0.001,,,,
+C07837,,Metabolite,0.001,,,,
+C00093,,Metabolite,0.001,,,,
+C00041,,Metabolite,0.001,,,,
+C00141,,Metabolite,0.001,,,,
+C01013,,Metabolite,0.001,,,,
+C00738,,Metabolite,0.001,,,,
+C00671,,Metabolite,0.001,,,,
+C05270,,Metabolite,0.001,,,,
+C00074,,Metabolite,0.18,,,,
+C00080,,Metabolite,0.0001,,,,
+C00181,,Metabolite,0.001,,,,
+C02917,,Metabolite,0.001,,,,
+C00207,,Metabolite,0.001,,,,
+C00132,,Metabolite,0.001,,,,
