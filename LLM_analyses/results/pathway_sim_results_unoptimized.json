@@ -1,0 +1,1455 @@
+[
+  {
+    "pid": "Formate_1_Serine",
+    "product": "L_Serine",
+    "product_initial_mM": 0.0001,
+    "product_final_mM": 0.0036034172347884936,
+    "delta_mM": 0.0035034172347884938,
+    "product_peak_mM": 0.004147240753188445,
+    "delta_peak_mM": 0.0040472407531884445,
+    "peak_time_h": 0.2305764411027569,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.03503417234788494,
+    "yield_pct_peak_mol_mol": 0.04047240753188445,
+    "meta": {
+      "pid": "Formate_1_Serine",
+      "product": "L_Serine",
+      "substrate": "Formate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "FTL",
+          "label": "hEC6343",
+          "ec": "6.3.4.3",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "MTHFD",
+          "label": "hEC1515",
+          "ec": "1.5.1.5",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {
+        "ATP": 1.0,
+        "NADPH": 1.0,
+        "Tetrahydrofolate": 1.0,
+        "Glycine": 1.0
+      },
+      "module": "One-carbon/serine metabolism",
+      "notes": "Feeds native SHMT (R49) via the newly-generated methylene-THF pool. Simulation revealed native free THF AND native Glycine are both essentially zero (~0.0001 mM each, trace placeholders, not real standing pools) -- SHMT cannot run forward to make serine without both, so this design requires small exogenous top-ups of both, not just THF. This is a real, simulation-derived correction to the original 'reuses native Glycine' assumption, not a design choice.",
+      "msp": [
+        5,
+        10
+      ],
+      "product_native": true,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Formate_1_Serine.txt"
+    }
+  },
+  {
+    "pid": "Formate_2_Pyruvate",
+    "product": "Pyruvate",
+    "product_initial_mM": 0.0001,
+    "product_final_mM": 0.005852376805161264,
+    "delta_mM": 0.005752376805161264,
+    "product_peak_mM": 0.008196259536688724,
+    "delta_peak_mM": 0.008096259536688724,
+    "peak_time_h": 0.10025062656641603,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.05752376805161265,
+    "yield_pct_peak_mol_mol": 0.08096259536688724,
+    "meta": {
+      "pid": "Formate_2_Pyruvate",
+      "product": "Pyruvate",
+      "substrate": "Formate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "PFL_rev",
+          "label": "hEC23154",
+          "ec": "2.3.1.54",
+          "conc_mM": 0.15
+        }
+      ],
+      "n_enzymes": 1,
+      "cofactor_additions": {
+        "AcetylCoA": 1.0
+      },
+      "module": "Pyruvate metabolism",
+      "notes": "Reverse pyruvate formate-lyase. Real PFL is an O2-sensitive glycyl-radical enzyme in vivo -- functional expression/activity in an aerobic lysate prep is a genuine open risk, not just a modeling detail.",
+      "msp": [
+        3,
+        8
+      ],
+      "product_native": true,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Formate_2_Pyruvate.txt"
+    }
+  },
+  {
+    "pid": "Formate_3_Alanine",
+    "product": "L_Alanine",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.008105494902920464,
+    "delta_mM": 0.008105494902920464,
+    "product_peak_mM": 0.008105494902920464,
+    "delta_peak_mM": 0.008105494902920464,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.08105494902920464,
+    "yield_pct_peak_mol_mol": 0.08105494902920464,
+    "meta": {
+      "pid": "Formate_3_Alanine",
+      "product": "L_Alanine",
+      "substrate": "Formate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "FDH2",
+          "label": "hEC11719X",
+          "ec": "1.17.1.9",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "AlaDH",
+          "label": "hEC1411",
+          "ec": "1.4.1.1",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {},
+      "module": "Pyruvate metabolism / amino acid biosynthesis",
+      "notes": "Uses the lysate's huge native ammonia pool as the amino donor; FDH regenerates NADH in-line so no exogenous NADH is needed, sidestepping the native NADH scarcity issue.",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Formate_3_Alanine.txt"
+    }
+  },
+  {
+    "pid": "Acetate_1_PHB",
+    "product": "PHB_monomer",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.0007413519696027671,
+    "delta_mM": 0.0007413519696027671,
+    "product_peak_mM": 0.0007413519696027671,
+    "delta_peak_mM": 0.0007413519696027671,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.007413519696027671,
+    "yield_pct_peak_mol_mol": 0.007413519696027671,
+    "meta": {
+      "pid": "Acetate_1_PHB",
+      "product": "PHB_monomer",
+      "substrate": "Acetate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "PhaB",
+          "label": "hEC11136",
+          "ec": "1.1.1.36",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "PhaC",
+          "label": "hEC231264",
+          "ec": "2.3.1.264",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {
+        "NADPH": 1.0
+      },
+      "module": "Fatty acid synthesis (novel polymer branch)",
+      "notes": "Reuses native acetate activation (R48) and native thiolase (R5) already in the model. PHB is an insoluble polymer -- PHB_monomer tracks flux into the product, not actual polymer accumulation/precipitation, which this ODE framework cannot represent.",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Acetate_1_PHB.txt"
+    }
+  },
+  {
+    "pid": "Acetate_2_Acetone",
+    "product": "Acetone",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.0007434230137683085,
+    "delta_mM": 0.0007434230137683085,
+    "product_peak_mM": 0.0007434230137683085,
+    "delta_peak_mM": 0.0007434230137683085,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.007434230137683085,
+    "yield_pct_peak_mol_mol": 0.007434230137683085,
+    "meta": {
+      "pid": "Acetate_2_Acetone",
+      "product": "Acetone",
+      "substrate": "Acetate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "AtoDA",
+          "label": "hEC2838",
+          "ec": "2.8.3.8",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "AdvB",
+          "label": "hEC4114",
+          "ec": "4.1.1.4",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {},
+      "module": "Fatty acid/ketone-body-adjacent metabolism",
+      "notes": "Classic Clostridium acetone pathway, reusing native thiolase (R5). A second acetate molecule is consumed as the CoA acceptor -- net 2 acetate in per acetone out.",
+      "msp": [
+        0.8,
+        1.5
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Acetate_2_Acetone.txt"
+    }
+  },
+  {
+    "pid": "Acetate_3_Ethanol",
+    "product": "Ethanol",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.2471614806014976,
+    "delta_mM": 0.2471614806014976,
+    "product_peak_mM": 0.2471614806014976,
+    "delta_peak_mM": 0.2471614806014976,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 2.471614806014976,
+    "yield_pct_peak_mol_mol": 2.471614806014976,
+    "meta": {
+      "pid": "Acetate_3_Ethanol",
+      "product": "Ethanol",
+      "substrate": "Acetate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "ALDH",
+          "label": "hEC12110",
+          "ec": "1.2.1.10",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "ADH",
+          "label": "hEC1111",
+          "ec": "1.1.1.1",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {
+        "NADH": 1.0
+      },
+      "module": "Pyruvate/fermentation metabolism",
+      "notes": "Reuses native acetate activation (R48) to reach AcetylCoA. Cheapest-value product of the ten Acetate/Formate/Pyruvate/Lactate options -- included for completeness and as a simple, well-validated benchmark route.",
+      "msp": [
+        0.5,
+        0.8
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Acetate_3_Ethanol.txt"
+    }
+  },
+  {
+    "pid": "Pyruvate_1_BDO",
+    "product": "BDO23",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.24189513308279106,
+    "delta_mM": 0.24189513308279106,
+    "product_peak_mM": 0.24189513308279106,
+    "delta_peak_mM": 0.24189513308279106,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 2.4189513308279107,
+    "yield_pct_peak_mol_mol": 2.4189513308279107,
+    "meta": {
+      "pid": "Pyruvate_1_BDO",
+      "product": "BDO23",
+      "substrate": "Pyruvate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "ALS",
+          "label": "hEC2216",
+          "ec": "2.2.1.6",
+          "conc_mM": 0.049999999999999996
+        },
+        {
+          "name": "ALDC",
+          "label": "hEC4115",
+          "ec": "4.1.1.5",
+          "conc_mM": 0.049999999999999996
+        },
+        {
+          "name": "BDH",
+          "label": "hEC1114",
+          "ec": "1.1.1.4",
+          "conc_mM": 0.049999999999999996
+        }
+      ],
+      "n_enzymes": 3,
+      "cofactor_additions": {
+        "NADH": 1.0
+      },
+      "module": "Pyruvate metabolism",
+      "notes": "Classic, well-validated 3-enzyme industrial route (2,3-butanediol). ALS formally needs 2 pyruvate per acetolactate.",
+      "msp": [
+        1,
+        2
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Pyruvate_1_BDO.txt"
+    }
+  },
+  {
+    "pid": "Pyruvate_2_Isobutanol",
+    "product": "Isobutanol",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 1.7770311799271425,
+    "delta_mM": 1.7770311799271425,
+    "product_peak_mM": 1.7770311799271425,
+    "delta_peak_mM": 1.7770311799271425,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 17.770311799271425,
+    "yield_pct_peak_mol_mol": 17.770311799271425,
+    "meta": {
+      "pid": "Pyruvate_2_Isobutanol",
+      "product": "Isobutanol",
+      "substrate": "Pyruvate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "ALS2",
+          "label": "hEC2216",
+          "ec": "2.2.1.6",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "KARI",
+          "label": "hEC11186",
+          "ec": "1.1.1.86",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "DHAD",
+          "label": "hEC4219",
+          "ec": "4.2.1.9",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "KDC",
+          "label": "hEC41172",
+          "ec": "4.1.1.72",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "ADH2",
+          "label": "hEC1111",
+          "ec": "1.1.1.1",
+          "conc_mM": 0.03
+        }
+      ],
+      "n_enzymes": 5,
+      "cofactor_additions": {
+        "NADPH": 1.0,
+        "NADH": 1.0
+      },
+      "module": "Pyruvate / branched-chain amino acid-adjacent metabolism",
+      "notes": "The Atsumi/Liao valine-pathway-derived isobutanol route -- 5 enzymes, the most complex design in this set. DHAD uses an Fe-S cluster (O2-sensitive in vivo, though not membrane-associated) -- a real activity risk to flag, not a blocker.",
+      "msp": [
+        1,
+        1.5
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Pyruvate_2_Isobutanol.txt"
+    }
+  },
+  {
+    "pid": "Pyruvate_3_Alanine",
+    "product": "L_Alanine",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 1.5001000202820236,
+    "delta_mM": 1.5001000202820236,
+    "product_peak_mM": 1.5001000202820236,
+    "delta_peak_mM": 1.5001000202820236,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 15.001000202820236,
+    "yield_pct_peak_mol_mol": 15.001000202820236,
+    "meta": {
+      "pid": "Pyruvate_3_Alanine",
+      "product": "L_Alanine",
+      "substrate": "Pyruvate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "FDH3",
+          "label": "hEC11719X",
+          "ec": "1.17.1.9",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "AlaDH2",
+          "label": "hEC1411",
+          "ec": "1.4.1.1",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {
+        "Formate": 10.0
+      },
+      "module": "Amino acid biosynthesis / pyruvate metabolism",
+      "notes": "Simplest possible pyruvate valorization (1 net conversion), but still needs an NADH source -- a small formate co-feed is included specifically to regenerate NADH in-line rather than assuming native NADH (which is scarce, ~0.003 mM) is sufficient alone.",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Pyruvate_3_Alanine.txt"
+    }
+  },
+  {
+    "pid": "HCO3_1_Malate",
+    "product": "SMalate",
+    "product_initial_mM": 0.17,
+    "product_final_mM": 0.2552160185592959,
+    "delta_mM": 0.08521601855929586,
+    "product_peak_mM": 0.27029573979723487,
+    "delta_peak_mM": 0.10029573979723486,
+    "peak_time_h": 0.7819548872180451,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.8521601855929587,
+    "yield_pct_peak_mol_mol": 1.0029573979723485,
+    "meta": {
+      "pid": "HCO3_1_Malate",
+      "product": "SMalate",
+      "substrate": "HCO3",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "PYC_new",
+          "label": "hEC6411X",
+          "ec": "6.4.1.1",
+          "conc_mM": 0.15
+        }
+      ],
+      "n_enzymes": 1,
+      "cofactor_additions": {
+        "ATP": 1.0,
+        "Pyruvate": 0.0
+      },
+      "module": "TCA cycle / anaplerosis (reductive route)",
+      "notes": "Single new enzyme (pyruvate carboxylase); reuses native MDH (eEC11137, already in the model) to finish OAA->malate. This recreates a simplified, standalone version of the project's original engineered route, now correctly scoped to only what's native plus this one addition -- no assumption of the other heterologous enzymes.",
+      "msp": [
+        2,
+        3
+      ],
+      "product_native": true,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\HCO3_1_Malate.txt"
+    }
+  },
+  {
+    "pid": "HCO3_2_3HP",
+    "product": "ThreeHP",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.0007002937664627507,
+    "delta_mM": 0.0007002937664627507,
+    "product_peak_mM": 0.0007002937664627507,
+    "delta_peak_mM": 0.0007002937664627507,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.007002937664627508,
+    "yield_pct_peak_mol_mol": 0.007002937664627508,
+    "meta": {
+      "pid": "HCO3_2_3HP",
+      "product": "ThreeHP",
+      "substrate": "HCO3",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "MCR_a",
+          "label": "hEC12175",
+          "ec": "1.2.1.75",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "MCR_b",
+          "label": "hEC111298",
+          "ec": "1.1.1.298",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {
+        "NADPH": 2.0,
+        "AcetylCoA": 1.0,
+        "ATP": 1.0
+      },
+      "module": "Fatty acid synthesis-adjacent (malonyl-CoA branch)",
+      "notes": "Reuses native acetyl-CoA carboxylase (R6, already in the model) for the actual HCO3-fixation step -- only the downstream bifunctional malonyl-CoA reductase is new. 3-HP is a top-tier DOE platform chemical (precursor to acrylic acid).",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\HCO3_2_3HP.txt"
+    }
+  },
+  {
+    "pid": "HCO3_3_Aspartate",
+    "product": "L_Aspartate",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.02776699679698432,
+    "delta_mM": 0.02776699679698432,
+    "product_peak_mM": 0.02776699679698432,
+    "delta_peak_mM": 0.02776699679698432,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.2776699679698432,
+    "yield_pct_peak_mol_mol": 0.2776699679698432,
+    "meta": {
+      "pid": "HCO3_3_Aspartate",
+      "product": "L_Aspartate",
+      "substrate": "HCO3",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "PPC",
+          "label": "hEC41131",
+          "ec": "4.1.1.31",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "AspDH",
+          "label": "hEC14121",
+          "ec": "1.4.1.21",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {
+        "NADH": 1.0
+      },
+      "module": "Amino acid biosynthesis / anaplerosis",
+      "notes": "PEP carboxylase is a cleaner, higher-affinity carboxylase than PYC and is not the same enzyme used in the malate route. Draws on native PEP and the lysate's abundant native ammonia pool for the amination step.",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\HCO3_3_Aspartate.txt"
+    }
+  },
+  {
+    "pid": "Lactate_1_BDO",
+    "product": "BDO23",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 1.6227967006610947e-10,
+    "delta_mM": 1.6227967006610947e-10,
+    "product_peak_mM": 1.6227967006610947e-10,
+    "delta_peak_mM": 1.6227967006610947e-10,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 1.6227967006610947e-09,
+    "yield_pct_peak_mol_mol": 1.6227967006610947e-09,
+    "meta": {
+      "pid": "Lactate_1_BDO",
+      "product": "BDO23",
+      "substrate": "S_Lactate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "ALS3",
+          "label": "hEC2216",
+          "ec": "2.2.1.6",
+          "conc_mM": 0.049999999999999996
+        },
+        {
+          "name": "ALDC2",
+          "label": "hEC4115",
+          "ec": "4.1.1.5",
+          "conc_mM": 0.049999999999999996
+        },
+        {
+          "name": "BDH2",
+          "label": "hEC1114",
+          "ec": "1.1.1.4",
+          "conc_mM": 0.049999999999999996
+        }
+      ],
+      "n_enzymes": 3,
+      "cofactor_additions": {
+        "NADH": 1.0
+      },
+      "module": "Pyruvate metabolism (via native LDH, R53)",
+      "notes": "Lactate feeds pyruvate via the ALREADY-NATIVE LDH (R53) -- no new enzyme needed for the entry step itself, only the same 3-enzyme BDO exit used for pyruvate. Demonstrates how tightly lactate and pyruvate are linked in this network.",
+      "msp": [
+        1,
+        2
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Lactate_1_BDO.txt"
+    }
+  },
+  {
+    "pid": "Lactate_2_Alanine",
+    "product": "L_Alanine",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.0020880624560739637,
+    "delta_mM": 0.0020880624560739637,
+    "product_peak_mM": 0.0020880624560739637,
+    "delta_peak_mM": 0.0020880624560739637,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.020880624560739636,
+    "yield_pct_peak_mol_mol": 0.020880624560739636,
+    "meta": {
+      "pid": "Lactate_2_Alanine",
+      "product": "L_Alanine",
+      "substrate": "S_Lactate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "AlaDH3",
+          "label": "hEC1411",
+          "ec": "1.4.1.1",
+          "conc_mM": 0.15
+        }
+      ],
+      "n_enzymes": 1,
+      "cofactor_additions": {
+        "NADH": 1.0
+      },
+      "module": "Amino acid biosynthesis / pyruvate metabolism",
+      "notes": "Simplest design in the whole set (1 new enzyme) -- native LDH (R53) already converts lactate to pyruvate; only the reductive amination is new.",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Lactate_2_Alanine.txt"
+    }
+  },
+  {
+    "pid": "Lactate_3_AcrylicAcid",
+    "product": "AcrylicAcid",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 1.1401548155138215,
+    "delta_mM": 1.1401548155138215,
+    "product_peak_mM": 1.143039016571565,
+    "delta_peak_mM": 1.143039016571565,
+    "peak_time_h": 1.9849624060150377,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 11.401548155138215,
+    "yield_pct_peak_mol_mol": 11.430390165715648,
+    "meta": {
+      "pid": "Lactate_3_AcrylicAcid",
+      "product": "AcrylicAcid",
+      "substrate": "S_Lactate",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": false,
+      "enzymes": [
+        {
+          "name": "PCT",
+          "label": "hEC2831",
+          "ec": "2.8.3.1",
+          "conc_mM": 0.049999999999999996
+        },
+        {
+          "name": "LCD",
+          "label": "hEC42154",
+          "ec": "4.2.1.54",
+          "conc_mM": 0.049999999999999996
+        },
+        {
+          "name": "TE",
+          "label": "hEC31220",
+          "ec": "3.1.2.20",
+          "conc_mM": 0.049999999999999996
+        }
+      ],
+      "n_enzymes": 3,
+      "cofactor_additions": {
+        "AcetylCoA": 1.0
+      },
+      "module": "Fatty acid/CoA-thioester metabolism (novel branch)",
+      "notes": "The Clostridium propionicum-derived route -- the one lactate-specific design that does NOT just funnel through pyruvate. Lactoyl-CoA dehydratase is a genuinely difficult, oxygen-sensitive radical enzyme in real biology -- flag this as the highest-risk expression/activity item in the whole 30-design set, not a minor caveat.",
+      "msp": [
+        1.5,
+        2
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Lactate_3_AcrylicAcid.txt"
+    }
+  },
+  {
+    "pid": "Glycerol_1_PDO12",
+    "product": "PDO12",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.23081459651271077,
+    "delta_mM": 0.23081459651271077,
+    "product_peak_mM": 0.23081459651271077,
+    "delta_peak_mM": 0.23081459651271077,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 2.3081459651271077,
+    "yield_pct_peak_mol_mol": 2.3081459651271077,
+    "meta": {
+      "pid": "Glycerol_1_PDO12",
+      "product": "PDO12",
+      "substrate": "Glycerol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "GlpK",
+          "label": "hEC27130",
+          "ec": "2.7.1.30",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "GPD1",
+          "label": "hEC1118",
+          "ec": "1.1.1.8",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "MgsA",
+          "label": "hEC4233",
+          "ec": "4.2.3.3",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "FucO",
+          "label": "hEC11177",
+          "ec": "1.1.1.77",
+          "conc_mM": 0.0375
+        }
+      ],
+      "n_enzymes": 4,
+      "cofactor_additions": {
+        "ATP": 1.0,
+        "NADH": 1.0
+      },
+      "module": "Glycolysis-adjacent (most dilution-protected native module)",
+      "notes": "Enters at DHAP (Glycerone_phosphate), the node found to be the most dilution-robust in the whole network (alpha=1.42). Methylglyoxal is a reactive electrophile -- real risk of off-target lysate protein damage if it accumulates faster than FucO consumes it.",
+      "msp": [
+        1,
+        2
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Glycerol_1_PDO12.txt"
+    }
+  },
+  {
+    "pid": "Glycerol_2_BDO",
+    "product": "BDO23",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 1.1983822792703875e-08,
+    "delta_mM": 1.1983822792703875e-08,
+    "product_peak_mM": 1.4833022594324519e-08,
+    "delta_peak_mM": 1.4833022594324519e-08,
+    "peak_time_h": 0.010025062656641605,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 1.1983822792703875e-07,
+    "yield_pct_peak_mol_mol": 1.483302259432452e-07,
+    "meta": {
+      "pid": "Glycerol_2_BDO",
+      "product": "BDO23",
+      "substrate": "Glycerol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "GlpK2",
+          "label": "hEC27130",
+          "ec": "2.7.1.30",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "GPD1b",
+          "label": "hEC1118",
+          "ec": "1.1.1.8",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "ALS4",
+          "label": "hEC2216",
+          "ec": "2.2.1.6",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "ALDC3",
+          "label": "hEC4115",
+          "ec": "4.1.1.5",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "BDH3",
+          "label": "hEC1114",
+          "ec": "1.1.1.4",
+          "conc_mM": 0.03
+        }
+      ],
+      "n_enzymes": 5,
+      "cofactor_additions": {
+        "ATP": 1.0,
+        "NADH": 1.0
+      },
+      "module": "Glycolysis + pyruvate metabolism",
+      "notes": "Longest route in the set (5 enzymes): glycerol enters at DHAP, flows through the rest of native glycolysis to pyruvate, then exits via the standard BDO route. Tests whether a fully-integrated entry+exit design pays off relative to the shorter, single-node options.",
+      "msp": [
+        1,
+        2
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Glycerol_2_BDO.txt"
+    }
+  },
+  {
+    "pid": "Glycerol_3_DHA",
+    "product": "DHA",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.007784036940299603,
+    "delta_mM": 0.007784036940299603,
+    "product_peak_mM": 0.015838496185199766,
+    "delta_peak_mM": 0.015838496185199766,
+    "peak_time_h": 0.010025062656641605,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.07784036940299603,
+    "yield_pct_peak_mol_mol": 0.15838496185199766,
+    "meta": {
+      "pid": "Glycerol_3_DHA",
+      "product": "DHA",
+      "substrate": "Glycerol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "GlyDH",
+          "label": "hEC1116",
+          "ec": "1.1.1.6",
+          "conc_mM": 0.15
+        }
+      ],
+      "n_enzymes": 1,
+      "cofactor_additions": {},
+      "module": "Glycolysis-adjacent (novel terminal product)",
+      "notes": "Single-enzyme design that deliberately AVOIDS ATP entirely (NAD+-dependent oxidation, not a kinase) -- sidesteps the native ATP-scarcity constraint identified for the other two glycerol routes. DHA has no native consuming reaction, so it simply accumulates as a clean terminal product.",
+      "msp": [
+        5,
+        8
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Glycerol_3_DHA.txt"
+    }
+  },
+  {
+    "pid": "Xylose_1_Xylitol",
+    "product": "Xylitol",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.4928853071982949,
+    "delta_mM": 0.4928853071982949,
+    "product_peak_mM": 0.4928853071982949,
+    "delta_peak_mM": 0.4928853071982949,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 4.928853071982949,
+    "yield_pct_peak_mol_mol": 4.928853071982949,
+    "meta": {
+      "pid": "Xylose_1_Xylitol",
+      "product": "Xylitol",
+      "substrate": "D_Xylose",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "XR",
+          "label": "hEC111307",
+          "ec": "1.1.1.307",
+          "conc_mM": 0.15
+        }
+      ],
+      "n_enzymes": 1,
+      "cofactor_additions": {
+        "NADPH": 1.0
+      },
+      "module": "Pentose phosphate pathway-adjacent (novel terminal product)",
+      "notes": "Single-enzyme design (xylose reductase). Xylitol has no native consuming reaction and just accumulates. NADPH is scarce natively (~0.003 mM) -- the exogenous NADPH addition is not optional here, it's load-bearing.",
+      "msp": [
+        3,
+        5
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Xylose_1_Xylitol.txt"
+    }
+  },
+  {
+    "pid": "Xylose_2_XylonicAcid",
+    "product": "XylonicAcid",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.5587209065901453,
+    "delta_mM": 0.5587209065901453,
+    "product_peak_mM": 0.5612001775723828,
+    "delta_peak_mM": 0.5612001775723828,
+    "peak_time_h": 0.7218045112781954,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 5.587209065901453,
+    "yield_pct_peak_mol_mol": 5.612001775723828,
+    "meta": {
+      "pid": "Xylose_2_XylonicAcid",
+      "product": "XylonicAcid",
+      "substrate": "D_Xylose",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "XDH",
+          "label": "hEC111175",
+          "ec": "1.1.1.175",
+          "conc_mM": 0.15
+        }
+      ],
+      "n_enzymes": 1,
+      "cofactor_additions": {},
+      "module": "Pentose phosphate pathway-adjacent (novel terminal product)",
+      "notes": "Single-enzyme oxidative route (xylose dehydrogenase) -- the xylose analogue of glucose's gluconic acid design. Net NADH producer rather than consumer, unlike most of this set.",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Xylose_2_XylonicAcid.txt"
+    }
+  },
+  {
+    "pid": "Xylose_3_BDO",
+    "product": "BDO23",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 2.333810393018361e-09,
+    "delta_mM": 2.333810393018361e-09,
+    "product_peak_mM": 2.333810393018361e-09,
+    "delta_peak_mM": 2.333810393018361e-09,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 2.333810393018361e-08,
+    "yield_pct_peak_mol_mol": 2.333810393018361e-08,
+    "meta": {
+      "pid": "Xylose_3_BDO",
+      "product": "BDO23",
+      "substrate": "D_Xylose",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "XylA",
+          "label": "hEC5315",
+          "ec": "5.3.1.5",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "XylB",
+          "label": "hEC27117",
+          "ec": "2.7.1.17",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "ALS5",
+          "label": "hEC2216",
+          "ec": "2.2.1.6",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "ALDC4",
+          "label": "hEC4115",
+          "ec": "4.1.1.5",
+          "conc_mM": 0.03
+        },
+        {
+          "name": "BDH4",
+          "label": "hEC1114",
+          "ec": "1.1.1.4",
+          "conc_mM": 0.03
+        }
+      ],
+      "n_enzymes": 5,
+      "cofactor_additions": {
+        "ATP": 1.0,
+        "NADH": 1.0
+      },
+      "module": "Pentose phosphate pathway + pyruvate metabolism",
+      "notes": "XylA/XylB feed the native PPP (moderately dilution-sensitive, alpha=2.37), which connects through to native glycolysis and pyruvate; exits via the standard BDO route. Note: XylA/XylB as written here are simplified stand-ins for the real isomerase+kinase pair and don't exactly reproduce native PPP stoichiometry.",
+      "msp": [
+        1,
+        2
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Xylose_3_BDO.txt"
+    }
+  },
+  {
+    "pid": "Methanol_1_G6P",
+    "product": "DGlucose6phosphate",
+    "product_initial_mM": 0.5,
+    "product_final_mM": 0.4632315025303377,
+    "delta_mM": -0.03676849746966232,
+    "product_peak_mM": 0.5,
+    "delta_peak_mM": 0.0,
+    "peak_time_h": 0.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": -0.3676849746966232,
+    "yield_pct_peak_mol_mol": 0.0,
+    "meta": {
+      "pid": "Methanol_1_G6P",
+      "product": "DGlucose6phosphate",
+      "substrate": "Methanol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "MDH_sol",
+          "label": "hEC111244",
+          "ec": "1.1.1.244",
+          "conc_mM": 0.049999999999999996
+        },
+        {
+          "name": "Hps",
+          "label": "hEC41243",
+          "ec": "4.1.2.43",
+          "conc_mM": 0.049999999999999996
+        },
+        {
+          "name": "Phi",
+          "label": "hEC53127",
+          "ec": "5.3.1.27",
+          "conc_mM": 0.049999999999999996
+        }
+      ],
+      "n_enzymes": 3,
+      "cofactor_additions": {},
+      "module": "Glycolysis/PPP (synthetic methylotrophy, RuMP pathway)",
+      "notes": "Uses the SOLUBLE NAD-dependent methanol dehydrogenase variant (e.g. Bacillus methanolicus-type), deliberately NOT the classic PQQ-dependent periplasmic/membrane-associated MDH, per the no-membrane-enzyme constraint. Classic RuMP formaldehyde-fixation pathway; feeds native Fructose-6-P, tracked here via the connected native G6P pool.",
+      "msp": [
+        10,
+        30
+      ],
+      "product_native": true,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Methanol_1_G6P.txt"
+    }
+  },
+  {
+    "pid": "Methanol_2_Alanine",
+    "product": "L_Alanine",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.0009400640982355921,
+    "delta_mM": 0.0009400640982355921,
+    "product_peak_mM": 0.0009400640982355921,
+    "delta_peak_mM": 0.0009400640982355921,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.00940064098235592,
+    "yield_pct_peak_mol_mol": 0.00940064098235592,
+    "meta": {
+      "pid": "Methanol_2_Alanine",
+      "product": "L_Alanine",
+      "substrate": "Methanol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "MDH_sol2",
+          "label": "hEC111244",
+          "ec": "1.1.1.244",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "AlaDH4",
+          "label": "hEC1411",
+          "ec": "1.4.1.1",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {},
+      "module": "Pyruvate metabolism / C1 metabolism",
+      "notes": "Methanol oxidation directly supplies the NADH the reductive amination needs -- no exogenous NADH required, similar in spirit to the Formate-to-Alanine design. Formaldehyde is a reactive, toxic intermediate -- same caveat as the glycerol/methylglyoxal route.",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Methanol_2_Alanine.txt"
+    }
+  },
+  {
+    "pid": "Methanol_3_Serine",
+    "product": "L_Serine",
+    "product_initial_mM": 0.0001,
+    "product_final_mM": 0.0016221285916075392,
+    "delta_mM": 0.0015221285916075392,
+    "product_peak_mM": 0.0023695273466341773,
+    "delta_peak_mM": 0.0022695273466341774,
+    "peak_time_h": 0.7117794486215538,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.015221285916075392,
+    "yield_pct_peak_mol_mol": 0.022695273466341776,
+    "meta": {
+      "pid": "Methanol_3_Serine",
+      "product": "L_Serine",
+      "substrate": "Methanol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "MDH_sol3",
+          "label": "hEC111244",
+          "ec": "1.1.1.244",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "FTHF_cond",
+          "label": "hECspontaneous_FTHF",
+          "ec": "spontaneous_FTHF",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {
+        "Tetrahydrofolate": 1.0,
+        "Glycine": 1.0
+      },
+      "module": "One-carbon/serine metabolism",
+      "notes": "Parallels the Formate-to-Serine design one step upstream. Feeds native SHMT (R49) via the newly-generated methylene-THF pool. Same native THF-and-Glycine scarcity finding as Formate_1_Serine applies here (both are ~0.0001 mM trace placeholders, not real pools) -- both are topped up exogenously for the same reason. The two C1-feedstock routes to the same product (Formate and Methanol) are a natural side-by-side comparison in the results table.",
+      "msp": [
+        5,
+        10
+      ],
+      "product_native": true,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Methanol_3_Serine.txt"
+    }
+  },
+  {
+    "pid": "Glucose_1_BDO",
+    "product": "BDO23",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 1.832310403355715e-08,
+    "delta_mM": 1.832310403355715e-08,
+    "product_peak_mM": 1.832310403355715e-08,
+    "delta_peak_mM": 1.832310403355715e-08,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 1.832310403355715e-07,
+    "yield_pct_peak_mol_mol": 1.832310403355715e-07,
+    "meta": {
+      "pid": "Glucose_1_BDO",
+      "product": "BDO23",
+      "substrate": "Glucose",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "HK",
+          "label": "hEC2711",
+          "ec": "2.7.1.1",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "ALS6",
+          "label": "hEC2216",
+          "ec": "2.2.1.6",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "ALDC5",
+          "label": "hEC4115",
+          "ec": "4.1.1.5",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "BDH5",
+          "label": "hEC1114",
+          "ec": "1.1.1.4",
+          "conc_mM": 0.0375
+        }
+      ],
+      "n_enzymes": 4,
+      "cofactor_additions": {
+        "ATP": 1.0,
+        "NADH": 1.0
+      },
+      "module": "Glycolysis + pyruvate metabolism",
+      "notes": "The classic, industrially-proven glucose fermentation route. Hexokinase feeds directly into the most dilution-protected native module (glycolysis, alpha=1.42) found in this system.",
+      "msp": [
+        1,
+        2
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Glucose_1_BDO.txt"
+    }
+  },
+  {
+    "pid": "Glucose_2_Mannitol",
+    "product": "Mannitol",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.14449562242465416,
+    "delta_mM": 0.14449562242465416,
+    "product_peak_mM": 0.14908381414171876,
+    "delta_peak_mM": 0.14908381414171876,
+    "peak_time_h": 2.0350877192982457,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 1.4449562242465417,
+    "yield_pct_peak_mol_mol": 1.4908381414171876,
+    "meta": {
+      "pid": "Glucose_2_Mannitol",
+      "product": "Mannitol",
+      "substrate": "Glucose",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "HK2",
+          "label": "hEC2711",
+          "ec": "2.7.1.1",
+          "conc_mM": 0.075
+        },
+        {
+          "name": "MtDH",
+          "label": "hEC11167",
+          "ec": "1.1.1.67",
+          "conc_mM": 0.075
+        }
+      ],
+      "n_enzymes": 2,
+      "cofactor_additions": {
+        "ATP": 1.0,
+        "NADH": 1.0
+      },
+      "module": "Glycolysis-adjacent (novel terminal branch)",
+      "notes": "Only 2 enzymes; taps the native glycolytic Fructose-6-P pool (reached via native PGI, R21, from the hexokinase product) for a direct reduction to the sugar-alcohol product, sidestepping the multi-step BDO/pyruvate exit route entirely.",
+      "msp": [
+        3,
+        5
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Glucose_2_Mannitol.txt"
+    }
+  },
+  {
+    "pid": "Glucose_3_GluconicAcid",
+    "product": "GluconicAcid",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.5193721007927821,
+    "delta_mM": 0.5193721007927821,
+    "product_peak_mM": 0.5193721007927821,
+    "delta_peak_mM": 0.5193721007927821,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 5.193721007927821,
+    "yield_pct_peak_mol_mol": 5.193721007927821,
+    "meta": {
+      "pid": "Glucose_3_GluconicAcid",
+      "product": "GluconicAcid",
+      "substrate": "Glucose",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "GDH",
+          "label": "hEC11147",
+          "ec": "1.1.1.47",
+          "conc_mM": 0.15
+        }
+      ],
+      "n_enzymes": 1,
+      "cofactor_additions": {},
+      "module": "Novel direct-oxidation branch (bypasses native glycolysis)",
+      "notes": "Single enzyme, and the ONLY glucose design that needs no ATP at all -- direct oxidation instead of phosphorylation, deliberately avoiding the native ATP-scarcity bottleneck identified for the kinase-dependent routes.",
+      "msp": [
+        1,
+        2
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Glucose_3_GluconicAcid.txt"
+    }
+  },
+  {
+    "pid": "Ethanol_1_PHB",
+    "product": "PHB_monomer",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.0006841083472349485,
+    "delta_mM": 0.0006841083472349485,
+    "product_peak_mM": 0.0006841083472349485,
+    "delta_peak_mM": 0.0006841083472349485,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.0068410834723494855,
+    "yield_pct_peak_mol_mol": 0.0068410834723494855,
+    "meta": {
+      "pid": "Ethanol_1_PHB",
+      "product": "PHB_monomer",
+      "substrate": "Ethanol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "ADH3",
+          "label": "hEC1111",
+          "ec": "1.1.1.1",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "ALDH2",
+          "label": "hEC1213",
+          "ec": "1.2.1.3",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "PhaB2",
+          "label": "hEC11136",
+          "ec": "1.1.1.36",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "PhaC2",
+          "label": "hEC231264",
+          "ec": "2.3.1.264",
+          "conc_mM": 0.0375
+        }
+      ],
+      "n_enzymes": 4,
+      "cofactor_additions": {
+        "NADPH": 1.0
+      },
+      "module": "Fatty acid synthesis-adjacent (novel polymer branch)",
+      "notes": "Longest ethanol route (4 enzymes): full oxidation to acetate, then reuses native acetate activation (R48) and native thiolase (R5) exactly as the Acetate_1_PHB design does. Net NADH producer (2x) upstream, NADPH consumer downstream.",
+      "msp": [
+        2,
+        4
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Ethanol_1_PHB.txt"
+    }
+  },
+  {
+    "pid": "Ethanol_2_Acetaldehyde",
+    "product": "Acetaldehyde",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.5716532933232279,
+    "delta_mM": 0.5716532933232279,
+    "product_peak_mM": 0.5716532933232279,
+    "delta_peak_mM": 0.5716532933232279,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 5.716532933232279,
+    "yield_pct_peak_mol_mol": 5.716532933232279,
+    "meta": {
+      "pid": "Ethanol_2_Acetaldehyde",
+      "product": "Acetaldehyde",
+      "substrate": "Ethanol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "ADH4",
+          "label": "hEC1111",
+          "ec": "1.1.1.1",
+          "conc_mM": 0.15
+        }
+      ],
+      "n_enzymes": 1,
+      "cofactor_additions": {},
+      "module": "Simple oxidation / pyruvate-adjacent",
+      "notes": "The simplest design in the entire 30-pathway set (1 enzyme, direct oxidation). Acetaldehyde is volatile and reactive -- real product-recovery and off-target-reactivity concerns despite the trivial pathway design.",
+      "msp": [
+        1,
+        1.5
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Ethanol_2_Acetaldehyde.txt"
+    }
+  },
+  {
+    "pid": "Ethanol_3_Acetone",
+    "product": "Acetone",
+    "product_initial_mM": 0.0,
+    "product_final_mM": 0.0006835646656121936,
+    "delta_mM": 0.0006835646656121936,
+    "product_peak_mM": 0.0006835646656121936,
+    "delta_peak_mM": 0.0006835646656121936,
+    "peak_time_h": 4.0,
+    "substrate_dose_mM": 10.0,
+    "yield_pct_mol_mol": 0.006835646656121937,
+    "yield_pct_peak_mol_mol": 0.006835646656121937,
+    "meta": {
+      "pid": "Ethanol_3_Acetone",
+      "product": "Acetone",
+      "substrate": "Ethanol",
+      "substrate_dose_mM": 10.0,
+      "orthogonal_new_substrate": true,
+      "enzymes": [
+        {
+          "name": "ADH5",
+          "label": "hEC1111",
+          "ec": "1.1.1.1",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "ALDH3",
+          "label": "hEC1213",
+          "ec": "1.2.1.3",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "AtoDA2",
+          "label": "hEC2838",
+          "ec": "2.8.3.8",
+          "conc_mM": 0.0375
+        },
+        {
+          "name": "AdvB2",
+          "label": "hEC4114",
+          "ec": "4.1.1.4",
+          "conc_mM": 0.0375
+        }
+      ],
+      "n_enzymes": 4,
+      "cofactor_additions": {},
+      "module": "Fatty acid/ketone-adjacent metabolism",
+      "notes": "Ethanol oxidized to acetate first, then follows the same acetone route as Acetate_2_Acetone -- again reusing native thiolase (R5). Direct comparison point against the Acetate-fed version of the same product.",
+      "msp": [
+        0.8,
+        1.5
+      ],
+      "product_native": false,
+      "file": "C:\\Users\\mkcoo\\Documents\\UW\\LLM_CFS_2\\model\\pathways\\Ethanol_3_Acetone.txt"
+    }
+  }
+]
