@@ -1,0 +1,617 @@
+{
+ "eEC1242": {
+  "driver": "p_eEC1242",
+  "rel": "rel0",
+  "ref": 0.028673653
+ },
+ "eEC27111": {
+  "driver": "p_eEC27111",
+  "rel": "rel0",
+  "ref": 0.001095808
+ },
+ "eEC23141": {
+  "driver": "p_eEC23141",
+  "rel": "rel0",
+  "ref": 0.005661677
+ },
+ "eEC42111": {
+  "driver": "p_eEC42111",
+  "rel": "rel0",
+  "ref": 0.013697605
+ },
+ "eEC11135": {
+  "driver": "p_eEC11135",
+  "rel": "rel0",
+  "ref": 0.000547904
+ },
+ "eEC42117": {
+  "driver": "p_eEC42117",
+  "rel": "rel0",
+  "ref": 0.000547904
+ },
+ "eEC31311": {
+  "driver": "p_eEC31311",
+  "rel": "rel0",
+  "ref": 0.002374251
+ },
+ "eEC111100": {
+  "driver": "p_eEC111100",
+  "rel": "rel0",
+  "ref": 0.001826347
+ },
+ "eEC41213": {
+  "driver": "p_eEC41213",
+  "rel": "rel0",
+  "ref": 0.007305389
+ },
+ "eEC4212": {
+  "driver": "p_eEC4212",
+  "rel": "rel0",
+  "ref": 0.009314371
+ },
+ "eEC11149": {
+  "driver": "p_eEC11149",
+  "rel": "rel0",
+  "ref": 0.004565868
+ },
+ "eEC5319": {
+  "driver": "p_eEC5319",
+  "rel": "rel0",
+  "ref": 0.000913174
+ },
+ "eEC12112": {
+  "driver": "p_eEC12112",
+  "rel": "rel0",
+  "ref": 0.019724551
+ },
+ "eEC2411": {
+  "driver": "p_eEC2411",
+  "rel": "rel0",
+  "ref": 0.001826347
+ },
+ "eEC6213": {
+  "driver": "p_eEC6213",
+  "rel": "rel0",
+  "ref": 0.001095808
+ },
+ "eEC11137": {
+  "driver": "p_eEC11137",
+  "rel": "rel0",
+  "ref": 0.012601796
+ },
+ "eEC23139": {
+  "driver": "p_eEC23139",
+  "rel": "rel0",
+  "ref": 0.002374251
+ },
+ "eEC11142": {
+  "driver": "p_eEC11142",
+  "rel": "rel0",
+  "ref": 0.01698503
+ },
+ "eEC2746": {
+  "driver": "p_eEC2746",
+  "rel": "rel0",
+  "ref": 0.003652695
+ },
+ "eEC41149": {
+  "driver": "p_eEC41149",
+  "rel": "rel0",
+  "ref": 0.007427146
+ },
+ "eEC41131": {
+  "driver": "p_eEC41131",
+  "rel": "rel0",
+  "ref": 0.005357285
+ },
+ "eEC2792": {
+  "driver": "p_eEC2792",
+  "rel": "rel0",
+  "ref": 0.010958084
+ },
+ "eEC5422": {
+  "driver": "p_eEC5422",
+  "rel": "rel0",
+  "ref": 0.003652695
+ },
+ "eEC2723": {
+  "driver": "p_eEC2723",
+  "rel": "rel0",
+  "ref": 0.01661976
+ },
+ "eEC54211": {
+  "driver": "p_eEC54211",
+  "rel": "rel0",
+  "ref": 0.000365269
+ },
+ "eEC1241": {
+  "driver": "p_eEC1241",
+  "rel": "rel0",
+  "ref": 0.018628742
+ },
+ "eEC231180": {
+  "driver": "p_eEC231180",
+  "rel": "rel0",
+  "ref": 0.00347006
+ },
+ "eEC27140": {
+  "driver": "p_eEC27140",
+  "rel": "rel0",
+  "ref": 0.00694012
+ },
+ "eEC5316": {
+  "driver": "p_eEC5316",
+  "rel": "rel0",
+  "ref": 0.002008982
+ },
+ "eEC5131": {
+  "driver": "p_eEC5131",
+  "rel": "rel0",
+  "ref": 0.000913174
+ },
+ "eEC1351": {
+  "driver": "p_eEC1351",
+  "rel": "rel0",
+  "ref": 0.007305389
+ },
+ "eEC6215": {
+  "driver": "p_eEC6215",
+  "rel": "rel0",
+  "ref": 0.018263473
+ },
+ "eEC2212": {
+  "driver": "p_eEC2212",
+  "rel": "rel0",
+  "ref": 0.011871257
+ },
+ "eEC2211": {
+  "driver": "p_eEC2211",
+  "rel": "rel0",
+  "ref": 0.014976048
+ },
+ "eEC5311": {
+  "driver": "p_eEC5311",
+  "rel": "rel0",
+  "ref": 0.002922156
+ },
+ "eEC2319": {
+  "driver": "p_eEC2319",
+  "rel": "rel0",
+  "ref": 0.000182635
+ },
+ "eEC2331": {
+  "driver": "p_eEC2331",
+  "rel": "rel0",
+  "ref": 0.010775449
+ },
+ "eEC4131": {
+  "driver": "p_eEC4131",
+  "rel": "rel0",
+  "ref": 0.0014002
+ },
+ "eEC6211": {
+  "driver": "p_eEC6211",
+  "rel": "rel0",
+  "ref": 0.002496008
+ },
+ "eEC2121": {
+  "driver": "p_eEC2121",
+  "rel": "rel0",
+  "ref": 0.00694012
+ },
+ "eEC2721": {
+  "driver": "p_eEC2721",
+  "rel": "rel0",
+  "ref": 0.002922156
+ },
+ "eEC4211": {
+  "driver": "p_eEC4211",
+  "rel": "rel0",
+  "ref": 0.002861277
+ },
+ "eEC43117": {
+  "driver": "p_eEC43117",
+  "rel": "rel0",
+  "ref": 0.0014002
+ },
+ "eEC11127": {
+  "driver": "p_eEC11127",
+  "rel": "rel0",
+  "ref": 0.000365269
+ },
+ "eEC6412": {
+  "driver": "p_eEC6412",
+  "rel": "rel0",
+  "ref": 0.006026946
+ },
+ "eEC4213": {
+  "driver": "p_eEC4213",
+  "rel": "rel0",
+  "ref": 0.032508982
+ },
+ "eEC2743": {
+  "driver": "p_eEC2743",
+  "rel": "rel0",
+  "ref": 0.00694012
+ },
+ "hEC6411": {
+  "driver": "p_hEC6411",
+  "rel": "rel1",
+  "ref": 0.01
+ },
+ "hEC11719": {
+  "driver": "p_hEC11719",
+  "rel": "rel2",
+  "ref": 0.01
+ },
+ "hEC43117": {
+  "driver": "p_hEC43117",
+  "rel": "rel3",
+  "ref": 0.01
+ },
+ "_3E_3_Enoyl_CoA": {
+  "driver": "v1",
+  "rel": null,
+  "ref": 0.001
+ },
+ "_3R_3_Hydroxyacyl_acyl_carrier_protein": {
+  "driver": "v2",
+  "rel": null,
+  "ref": 0.001
+ },
+ "_3S_3_Hydroxyacyl_CoA": {
+  "driver": "v3",
+  "rel": null,
+  "ref": 0.001
+ },
+ "ADP": {
+  "driver": "v4",
+  "rel": null,
+  "ref": 0.1
+ },
+ "AMP": {
+  "driver": "v5",
+  "rel": null,
+  "ref": 10.0
+ },
+ "ATP": {
+  "driver": "v6",
+  "rel": null,
+  "ref": 1.5
+ },
+ "Acetate": {
+  "driver": "v7",
+  "rel": null,
+  "ref": 69.3
+ },
+ "Acetoacetyl_acp": {
+  "driver": "v9",
+  "rel": null,
+  "ref": 0.001
+ },
+ "AcetylCoA": {
+  "driver": "v10",
+  "rel": null,
+  "ref": 0.61
+ },
+ "Acetyl_phosphate": {
+  "driver": "v11",
+  "rel": null,
+  "ref": 1.1
+ },
+ "Acyl_acyl_carrier_protein": {
+  "driver": "v12",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Acyl_carrier_protein": {
+  "driver": "v13",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Ammonia": {
+  "driver": "v14",
+  "rel": null,
+  "ref": 15.0
+ },
+ "CO2": {
+  "driver": "v15",
+  "rel": null,
+  "ref": 0.0184
+ },
+ "Citrate": {
+  "driver": "v16",
+  "rel": null,
+  "ref": 2.0
+ },
+ "CoA": {
+  "driver": "v17",
+  "rel": null,
+  "ref": 4.4
+ },
+ "D_Erythrose_4_phosphate": {
+  "driver": "v18",
+  "rel": null,
+  "ref": 0.001
+ },
+ "D_Fructose_1_6_bisphosphate": {
+  "driver": "v19",
+  "rel": null,
+  "ref": 15.0
+ },
+ "D_Fructose_6_phosphate": {
+  "driver": "v20",
+  "rel": null,
+  "ref": 3.8
+ },
+ "D_Glucono_1_5_lactone_6_phosphate": {
+  "driver": "v21",
+  "rel": null,
+  "ref": 0.001
+ },
+ "D_Glucose_1_phosphate": {
+  "driver": "v22",
+  "rel": null,
+  "ref": 0.001
+ },
+ "DGlucose6phosphate": {
+  "driver": "v23",
+  "rel": null,
+  "ref": 5.0
+ },
+ "D_Glyceraldehyde_3_phosphate": {
+  "driver": "v24",
+  "rel": null,
+  "ref": 0.001
+ },
+ "D_ribose_5_phosphate": {
+  "driver": "v25",
+  "rel": null,
+  "ref": 0.001
+ },
+ "D_Ribulose_5_phosphate": {
+  "driver": "v26",
+  "rel": null,
+  "ref": 0.5
+ },
+ "D_Xylulose_5_phosphate": {
+  "driver": "v27",
+  "rel": null,
+  "ref": 0.5
+ },
+ "Diphosphate": {
+  "driver": "v28",
+  "rel": null,
+  "ref": 1.0
+ },
+ "Fumarate": {
+  "driver": "v29",
+  "rel": null,
+  "ref": 0.12
+ },
+ "Glycerone_phosphate": {
+  "driver": "v30",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Glycine": {
+  "driver": "v31",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Glyoxylate": {
+  "driver": "v32",
+  "rel": null,
+  "ref": 0.001
+ },
+ "H2O": {
+  "driver": "v34",
+  "rel": null,
+  "ref": 55000.0
+ },
+ "HCO3": {
+  "driver": "v35",
+  "rel": null,
+  "ref": 0.015
+ },
+ "Hydroquinone": {
+  "driver": "v36",
+  "rel": null,
+  "ref": 1.0
+ },
+ "Isocitrate": {
+  "driver": "v37",
+  "rel": null,
+  "ref": 0.001
+ },
+ "L_Serine": {
+  "driver": "v38",
+  "rel": null,
+  "ref": 0.001
+ },
+ "LongchainacylCoA": {
+  "driver": "v39",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Long_chain_fatty_acid": {
+  "driver": "v40",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Malonyl_CoA": {
+  "driver": "v41",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Malonyl_acyl_carrier_protein": {
+  "driver": "v42",
+  "rel": null,
+  "ref": 0.001
+ },
+ "NAD": {
+  "driver": "v43",
+  "rel": null,
+  "ref": 5.6
+ },
+ "NADH": {
+  "driver": "v44",
+  "rel": null,
+  "ref": 0.083
+ },
+ "NADP": {
+  "driver": "v45",
+  "rel": null,
+  "ref": 0.0021
+ },
+ "NADPH": {
+  "driver": "v46",
+  "rel": null,
+  "ref": 0.12
+ },
+ "NDP": {
+  "driver": "v47",
+  "rel": null,
+  "ref": 1.0
+ },
+ "NTP": {
+  "driver": "v48",
+  "rel": null,
+  "ref": 1.5
+ },
+ "Orthophosphate": {
+  "driver": "v49",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Oxaloacetate": {
+  "driver": "v50",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Oxalosuccinate": {
+  "driver": "v51",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Phosphoenolpyruvate": {
+  "driver": "v52",
+  "rel": null,
+  "ref": 0.18
+ },
+ "Pyruvate": {
+  "driver": "v53",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Quinone": {
+  "driver": "v54",
+  "rel": null,
+  "ref": 1.0
+ },
+ "S_Lactate": {
+  "driver": "v55",
+  "rel": null,
+  "ref": 3.25
+ },
+ "SMalate": {
+  "driver": "v56",
+  "rel": null,
+  "ref": 1.7
+ },
+ "Sedoheptulose_7_phosphate": {
+  "driver": "v57",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Starch": {
+  "driver": "v58",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Succinate": {
+  "driver": "v59",
+  "rel": null,
+  "ref": 7.1692
+ },
+ "SuccinylCoA": {
+  "driver": "v60",
+  "rel": null,
+  "ref": 0.23
+ },
+ "Tetrahydrofolate": {
+  "driver": "v61",
+  "rel": null,
+  "ref": 0.001
+ },
+ "_1_4_alpha_D_Glucan": {
+  "driver": "v62",
+  "rel": null,
+  "ref": 0.001
+ },
+ "n2Oxoglutarate": {
+  "driver": "v63",
+  "rel": null,
+  "ref": 0.44
+ },
+ "_2_Phospho_D_glycerate": {
+  "driver": "v64",
+  "rel": null,
+  "ref": 1.5
+ },
+ "_3_Oxoacyl_CoA": {
+  "driver": "v65",
+  "rel": null,
+  "ref": 0.001
+ },
+ "_3_Oxoacyl_acyl_carrier_protein": {
+  "driver": "v66",
+  "rel": null,
+  "ref": 0.001
+ },
+ "_3_Phospho_D_glycerate": {
+  "driver": "v67",
+  "rel": null,
+  "ref": 30.0
+ },
+ "_5_10_Methylenetetrahydrofolate": {
+  "driver": "v69",
+  "rel": null,
+  "ref": 0.001
+ },
+ "cis_Aconitate": {
+  "driver": "v70",
+  "rel": null,
+  "ref": 0.001
+ },
+ "trans_2_3_Dehydroacyl_CoA": {
+  "driver": "v71",
+  "rel": null,
+  "ref": 0.001
+ },
+ "trans_2_3_Dehydroacyl_acyl_carrier_protein": {
+  "driver": "v72",
+  "rel": null,
+  "ref": 0.001
+ },
+ "Hydroxycitrate": {
+  "driver": "v73",
+  "rel": null,
+  "ref": 1e-07
+ },
+ "Formate": {
+  "driver": "v74",
+  "rel": null,
+  "ref": 0.001
+ },
+ "AcetoAcetylCoA": {
+  "driver": "v75",
+  "rel": null,
+  "ref": 0.001
+ },
+ "_3_Phospho_D_glyceroyl_phosphate": {
+  "driver": "v76",
+  "rel": null,
+  "ref": 0.001
+ }
+}
